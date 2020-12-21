@@ -61,8 +61,8 @@
 			children = (
 				DEFF0FEC258D216600042A49 /* AppDelegate.swift */,
 				DEFF1002258D472300042A49 /* Models */,
-				DEFF1000258D46DE00042A49 /* Controllers */,
 				DEFF1001258D470700042A49 /* Views */,
+				DEFF1000258D46DE00042A49 /* Controllers */,
 				DEFF0FF3258D216800042A49 /* Assets.xcassets */,
 				DEFF0FFE258D3ADC00042A49 /* MyPlaygroundAlura.playground */,
 				DEFF0FF5258D216800042A49 /* LaunchScreen.storyboard */,
