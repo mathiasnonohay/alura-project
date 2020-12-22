@@ -14,6 +14,7 @@
 		DEFF0FF7258D216800042A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFF0FF5258D216800042A49 /* LaunchScreen.storyboard */; };
 		DEFF10042590D88700042A49 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF10032590D88700042A49 /* Refeicao.swift */; };
 		DEFF10062590D93600042A49 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF10052590D93600042A49 /* Item.swift */; };
+		DEFF10662592320E00042A49 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF10652592320E00042A49 /* RefeicoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DEFF0FFE258D3ADC00042A49 /* MyPlaygroundAlura.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlaygroundAlura.playground; path = "../../../../Library/Autosave Information/MyPlaygroundAlura.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DEFF10032590D88700042A49 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		DEFF10052590D93600042A49 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DEFF10652592320E00042A49 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFF0FEE258D216600042A49 /* ViewController.swift */,
+				DEFF10652592320E00042A49 /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				DEFF10062590D93600042A49 /* Item.swift in Sources */,
 				DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */,
+				DEFF10662592320E00042A49 /* RefeicoesTableViewController.swift in Sources */,
 				DEFF10042590D88700042A49 /* Refeicao.swift in Sources */,
 				DEFF0FED258D216600042A49 /* AppDelegate.swift in Sources */,
 			);
