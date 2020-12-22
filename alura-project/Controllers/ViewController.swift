@@ -10,33 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var tableViewController: RefeicoesTableViewController?
+    
     @IBOutlet var nomeTextField: UITextField?
     @IBOutlet weak var felicidadeTextField: UITextField?
     
     @IBAction func adicionar(_ sender: Any) {
         
-        
-//============================================= Código Omitido =============================================
-//        if let nomeDaRefeicao = nomeTextField?.text, let felicidadeDaRefeicao = felicidadeTextField?.text{
-//            let nome = nomeDaRefeicao
-//            if let felicidade = Int(felicidadeDaRefeicao) {
-//                let refeicao = Refeicao(nome: nome, felicidade: felicidade)
-//                print("comi \(refeicao.nome) e fiquei com felicidade: \(refeicao.felicidade)")
-//            } else {
-//                print("erro ao tentar criar a refeição")
-//            }
-//        }
-        
         guard let nomeDaRefeicao = nomeTextField?.text else{
+            // verifica o nome da refeição para não haver problemas com nil
             return
         }
         
         guard let felicadedDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicadedDaRefeicao) else {
+            // verifica a felicidade para não haver problemas com nil
             return
         }
         let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
         
         print("comi \(refeicao.nome) e fiquei com felicidade: \(refeicao.felicidade)")
+        
+        tableViewController?.add(refeicao)
+        navigationController?.popViewController(animated: true)  // desaparece com a tela atual
     }
 }
 
