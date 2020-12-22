@@ -109,7 +109,7 @@
                     <navigationItem key="navigationItem" id="xId-uf-i17">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="ePj-11-d9f">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="ve6-Ca-60p"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="adicionar" id="ve6-Ca-60p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
