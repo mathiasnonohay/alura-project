@@ -9,15 +9,19 @@
 import UIKit
 
 class Refeicao: NSObject {
+    
     // MARK: - Atributos
+    
     let nome: String
     let felicidade: Int
-    let itens: Array<Item> = []
+    var itens: Array<Item> = []
     
-    // MARK: - Contrutor
-    init(nome: String, felicidade: Int){
+    // MARK: - Contrutor (Init)
+    
+    init(nome: String, felicidade: Int, itens: [Item] = []){
         self.nome = nome
         self.felicidade = felicidade
+        self.itens = itens
     }
     
     
