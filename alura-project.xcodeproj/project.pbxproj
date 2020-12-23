@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEDE6363259377C0003981F8 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE6361259377C0003981F8 /* AdicionarItensViewController.swift */; };
+		DEDE6364259377C0003981F8 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */; };
 		DEFF0FED258D216600042A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEC258D216600042A49 /* AppDelegate.swift */; };
 		DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEE258D216600042A49 /* ViewController.swift */; };
 		DEFF0FF2258D216600042A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFF0FF0258D216600042A49 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEDE6361259377C0003981F8 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
+		DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		DEFF0FE9258D216600042A49 /* alura-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFF0FEC258D216600042A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEFF0FEE258D216600042A49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			children = (
 				DEFF0FEE258D216600042A49 /* ViewController.swift */,
 				DEFF10652592320E00042A49 /* RefeicoesTableViewController.swift */,
+				DEDE6361259377C0003981F8 /* AdicionarItensViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFF0FF0258D216600042A49 /* Main.storyboard */,
+				DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				DEFF0FF7258D216800042A49 /* LaunchScreen.storyboard in Resources */,
 				DEFF0FF4258D216800042A49 /* Assets.xcassets in Resources */,
+				DEDE6364259377C0003981F8 /* AdicionarItensViewController.xib in Resources */,
 				DEFF0FF2258D216600042A49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFF10062590D93600042A49 /* Item.swift in Sources */,
+				DEDE6363259377C0003981F8 /* AdicionarItensViewController.swift in Sources */,
 				DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */,
 				DEFF10662592320E00042A49 /* RefeicoesTableViewController.swift in Sources */,
 				DEFF10042590D88700042A49 /* Refeicao.swift in Sources */,
