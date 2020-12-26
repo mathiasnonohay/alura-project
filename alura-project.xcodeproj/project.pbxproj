@@ -11,6 +11,8 @@
 		DEDE6364259377C0003981F8 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */; };
 		DEDE63662597754F003981F8 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE63652597754F003981F8 /* Alerta.swift */; };
 		DEDE63682597945F003981F8 /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE63672597945F003981F8 /* RemoveRefeicaoViewController.swift */; };
+		DEDE636A2597D692003981F8 /* RefeicaoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE63692597D692003981F8 /* RefeicaoDAO.swift */; };
+		DEDE636C2597D949003981F8 /* ItemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE636B2597D949003981F8 /* ItemDAO.swift */; };
 		DEFF0FED258D216600042A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEC258D216600042A49 /* AppDelegate.swift */; };
 		DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEE258D216600042A49 /* ViewController.swift */; };
 		DEFF0FF2258D216600042A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFF0FF0258D216600042A49 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		DEDE63652597754F003981F8 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		DEDE63672597945F003981F8 /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
+		DEDE63692597D692003981F8 /* RefeicaoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoDAO.swift; sourceTree = "<group>"; };
+		DEDE636B2597D949003981F8 /* ItemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDAO.swift; sourceTree = "<group>"; };
 		DEFF0FE9258D216600042A49 /* alura-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFF0FEC258D216600042A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEFF0FEE258D216600042A49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				DEFF10032590D88700042A49 /* Refeicao.swift */,
 				DEFF10052590D93600042A49 /* Item.swift */,
 				DEDE63652597754F003981F8 /* Alerta.swift */,
+				DEDE63692597D692003981F8 /* RefeicaoDAO.swift */,
+				DEDE636B2597D949003981F8 /* ItemDAO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,8 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDE63682597945F003981F8 /* RemoveRefeicaoViewController.swift in Sources */,
+				DEDE636C2597D949003981F8 /* ItemDAO.swift in Sources */,
 				DEFF10062590D93600042A49 /* Item.swift in Sources */,
 				DEDE6363259377C0003981F8 /* AdicionarItensViewController.swift in Sources */,
+				DEDE636A2597D692003981F8 /* RefeicaoDAO.swift in Sources */,
 				DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */,
 				DEFF10662592320E00042A49 /* RefeicoesTableViewController.swift in Sources */,
 				DEFF10042590D88700042A49 /* Refeicao.swift in Sources */,
