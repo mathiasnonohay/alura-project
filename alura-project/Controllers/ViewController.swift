@@ -40,6 +40,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         let botaoAdicionaItem = UIBarButtonItem(title: "Adicionar", style: .plain, target: self, action: #selector(adicionarItem))
         navigationItem.rightBarButtonItem = botaoAdicionaItem
+        
+        do {
+            guard let diretorio = recuperaDiretorio() else { return }
+            let dados = try Data(contentsOf: diretorio)
+            let itensSalvos = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as! Array<Item>
+            itens = itensSalvos
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     @objc func adicionarItem() {
@@ -54,6 +63,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } else {
             Alerta(controller: self).exbibe(mensagem: "Erro ao atualizar a tabela ")
         }
+        
+        do {
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
+            guard let caminho = recuperaDiretorio() else { return }
+            try dados.write(to: caminho)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func recuperaDiretorio() -> URL? {
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
+        let caminho = diretorio.appendingPathComponent("itens")
+        
+        return caminho
     }
     
     // MARK: - UITableViewDataSource
