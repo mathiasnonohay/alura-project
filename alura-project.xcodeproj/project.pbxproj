@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DEDE6363259377C0003981F8 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE6361259377C0003981F8 /* AdicionarItensViewController.swift */; };
 		DEDE6364259377C0003981F8 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */; };
+		DEDE63662597754F003981F8 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE63652597754F003981F8 /* Alerta.swift */; };
 		DEFF0FED258D216600042A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEC258D216600042A49 /* AppDelegate.swift */; };
 		DEFF0FEF258D216600042A49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFF0FEE258D216600042A49 /* ViewController.swift */; };
 		DEFF0FF2258D216600042A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFF0FF0258D216600042A49 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		DEDE6361259377C0003981F8 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		DEDE6362259377C0003981F8 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
+		DEDE63652597754F003981F8 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		DEFF0FE9258D216600042A49 /* alura-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFF0FEC258D216600042A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEFF0FEE258D216600042A49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				DEFF10032590D88700042A49 /* Refeicao.swift */,
 				DEFF10052590D93600042A49 /* Item.swift */,
+				DEDE63652597754F003981F8 /* Alerta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				DEFF10662592320E00042A49 /* RefeicoesTableViewController.swift in Sources */,
 				DEFF10042590D88700042A49 /* Refeicao.swift in Sources */,
 				DEFF0FED258D216600042A49 /* AppDelegate.swift in Sources */,
+				DEDE63662597754F003981F8 /* Alerta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

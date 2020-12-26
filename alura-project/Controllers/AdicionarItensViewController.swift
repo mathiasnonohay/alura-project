@@ -47,8 +47,10 @@ class AdicionarItensViewController: UIViewController {
         // navegar para proxima tela: navigationController. push()
         // voltar para tela anterior: navigationController.pop()
         guard let nome = nomeTextField.text, let calorias = caloriasTextField.text else { return }
+        
         if let numeroDeCalorias = Double(calorias) {
             let item = Item(nome: nome, calorias: numeroDeCalorias)
+            
             delegate?.add(item)
             navigationController?.popViewController(animated: true)
         }
