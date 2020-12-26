@@ -16,8 +16,8 @@ class Alerta {
         self.controller = controller
     }
     
-    func exbibe(){
-        let alerta = UIAlertController(title: "Desculpe", message: "Não foi possível atualizar a tabela", preferredStyle: .alert)
+    func exbibe(titulo: String = "Atenção", mensagem: String ){
+        let alerta = UIAlertController(title: titulo, message: mensagem, preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alerta.addAction(ok)
         controller.present(alerta, animated: true, completion: nil)

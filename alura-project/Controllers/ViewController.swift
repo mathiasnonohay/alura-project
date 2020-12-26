@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let tableView = itensTableView {
             tableView.reloadData()
         } else {
-            Alerta(controller: self).exbibe()
+            Alerta(controller: self).exbibe(mensagem: "Erro ao atualizar a tabela ")
         }
     }
     
@@ -91,26 +91,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    // MARK: -IBActions
-    
-    @IBAction func adicionar(_ sender: Any) {
-        
+    func recuperaRefeicaoDoFormulario() -> Refeicao? {
         guard let nomeDaRefeicao = nomeTextField?.text else{
             // verifica o nome da refeição para não haver problemas com nil
-            return
+            return nil
         }
-        
         guard let felicadedDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicadedDaRefeicao) else {
             // verifica a felicidade para não haver problemas com nil
-            return
+            return nil
         }
         let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
         
-        refeicao.itens = itensSelecionados
-        
-        print("comi \(refeicao.nome) e fiquei com felicidade: \(refeicao.felicidade)")
-        
-        delegate?.add(refeicao)
-        navigationController?.popViewController(animated: true)  // desaparece com a tela atual
+        return refeicao
+    }
+    
+    // MARK: -IBActions
+    
+    @IBAction func adicionar(_ sender: Any) {
+        if let refeicao = recuperaRefeicaoDoFormulario() {
+            delegate?.add(refeicao)
+            navigationController?.popViewController(animated: true)  // desaparece com a tela atual
+        } else {
+            // Alerta
+            Alerta(controller: self).exbibe(mensagem: "Erro ao ler dados do formulário")
+        }
     }
 }
